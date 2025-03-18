@@ -32,6 +32,14 @@ export class UIManager {
         const t = this.translations[this.currentLanguage];
         
         pipelineButton.textContent = this.isConnecting ? t.cancelPipeline : t.addPipeline;
+        
+        // Set button color: red for cancel, blue for add
+        if (this.isConnecting) {
+            pipelineButton.style.backgroundColor = 'var(--accent-color)'; // Red
+        } else {
+            pipelineButton.style.backgroundColor = 'var(--primary-color)'; // Blue
+        }
+        
         return this.isConnecting;
     }
     
