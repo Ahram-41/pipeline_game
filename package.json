@@ -1,0 +1,17 @@
+{
+  "name": "pipeline-game",
+  "version": "1.0.0",
+  "description": "A lightweight 2D gas pipeline visualization game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "game",
+    "pipeline",
+    "canvas",
+    "visualization"
+  ],
+  "author": "",
+  "license": "MIT"
+} 

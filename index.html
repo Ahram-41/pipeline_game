@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>燃气管道系统</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">燃气管道系统</h1>
+            <p class="subtitle" id="subtitle">创建和可视化燃气管道网络</p>
+            <button id="language-toggle">中文</button>
+        </header>
+        
+        <div class="toolbar">
+            <button id="add-gas-source">添加燃气源</button>
+            <button id="add-switch">添加开关</button>
+            <button id="add-connector">添加连接器</button>
+            <button id="add-pipeline">添加管道</button>
+            <button id="update-colors">更新流动</button>
+        </div>
+        
+        <div class="main-content">
+            <div class="instructions">
+                <h3 id="instructions-title">使用说明：</h3>
+                <ul id="instructions-list">
+                    <li><strong id="instr-click">左键点击</strong>：<span id="instr-click-desc">选择和拖动元件、切换开关、创建连接</span></li>
+                    <li><strong id="instr-right">右键点击</strong>：<span id="instr-right-desc">删除元件、管道及其连接</span></li>
+                    <li><strong id="instr-pipeline">添加管道按钮</strong>：<span id="instr-pipeline-desc">点击进入连接模式，然后点击两个元件进行连接</span></li>
+                    <li><strong id="instr-update">更新流动按钮</strong>：<span id="instr-update-desc">重新计算系统中的燃气流动</span></li>
+                </ul>
+            </div>
+            
+            <div id="canvas-container">
+                <canvas id="pipeline-canvas" width="700" height="600"></canvas>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/js/pipeline.js"></script>
+</body>
+</html> 
